@@ -1,11 +1,96 @@
-.float-container {
-    border: 3px solid #fff;
-    padding: 10px;
-    display:table;
+body {
+  background-color: bisque;
 }
-
-.float-child {
-    float: left;
-    padding: 10px;
-    border: 2px solid black;
-}  
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(26, 23, 22);
+}
+.wrapper > .input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.wrapper > .input > label {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.wrapper > .input > input {
+  width: 80vw;
+  height: 40px;
+  font-size: 2em;
+  color: aliceblue;
+  border: 5px solid aliceblue;
+  border-radius: 50% 50% 0 0;
+  text-align: center;
+  background-color: rgb(224, 91, 91);
+}
+.wrapper > .input > input:focus {
+  outline: none;
+}
+.wrapper > .float-container {
+  border: aliceblue solid 5px;
+  display: flex;
+  width: 60vw;
+  padding: 20px;
+  background: rgb(224, 91, 91);
+}
+.wrapper > .float-container > .float-child {
+  flex-direction: row;
+  width: 50%;
+  margin: 10px;
+  color: rgb(46, 50, 54);
+}
+.wrapper > .float-container > #summary {
+  color: aliceblue;
+  margin: 80px 0 0 0;
+  font-size: 1.5em;
+  border: white solid 5px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 3%;
+}
+.wrapper > .float-container > #summary > p > span {
+  padding: 20px 0;
+}
+.wrapper > .float-container > .float-child > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 15px;
+}
+.wrapper > .float-container > .float-child > ul {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper > .float-container > .float-child > ul > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  /* background: white; */
+  border: rgb(3, 3, 3) solid 5px;
+  border-radius: 3%;
+  background-color: aliceblue;
+}
+.wrapper > .float-container > .float-child > ul > li > img {
+  border-radius: 50%;
+  position: end;
+  justify-content: end;
+  align-items: end;
+  padding: 5px;
+  margin: 20px;
+  border: solid 5px rgb(224, 91, 91);
+}

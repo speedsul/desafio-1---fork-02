@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>API random user Example</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
-    <input id ="searchstring" type="text" onchange="addToBuffer()">
+    <div class="wrapper">
+      <div class="input">
+        <label for="searchstring"
+          >Digite uma letra para ativar sua busca:</label
+        >
+        <input id="searchstring" type="text" onchange="addToBuffer()" />
+      </div>
+      <div id="results" class="float-container">
+        <div id="foundlist" class="float-child">
+          <ul id="listofpersons"></ul>
 
- <label>Digite uma letra para ativar sua busca:</label>   
+          <h1>Results:</h1>
+        </div>
 
-    <div id="results" class="float-container" >
-      <div id="foundlist" class="float-child">
+        <div id="summary" class="float-child">
+          <h2>Statistics</h2>
 
-      <ul id="listofpersons">
-        </ul>
-
-        <h1>Results:</h1>
-
-     </div>
-
-       <div id="summary" class="float-child" >
-
-        <h2>Statistics</h2>
-        
-        <p class="statitem" >Males:<spam id="countmales"></spam>
-        <p class="statitem" >Females:<spam id="countfemales"></spam>
-        <p class="statitem" >Total of ages:<spam id="totalages"></spam>
-        <p class="statitem" >Average age:<spam id="averageage"></spam>
+          <p class="statitem">Males:<spam id="countmales"></spam></p>
+          <p class="statitem">Females:<spam id="countfemales"></spam></p>
+          <p class="statitem">Total of ages:<spam id="totalages"></spam></p>
+          <p class="statitem">Average age:<spam id="averageage"></spam></p>
+        </div>
       </div>
     </div>
-    
+    <script src="script.js"></script>
   </body>
 </html>
