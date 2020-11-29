@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: rgb(26, 23, 22);
 }
 .wrapper {
   display: flex;
@@ -9,6 +9,7 @@ body {
   height: auto;
   background-color: rgb(26, 23, 22);
 }
+
 .wrapper > .input {
   display: flex;
   flex-direction: column;
@@ -40,6 +41,16 @@ body {
   width: 60vw;
   padding: 20px;
   background: rgb(224, 91, 91);
+}
+@media only screen and (max-width: 800px) {
+  .wrapper > .float-container > .float-child {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .wrapper > .float-container {
+    padding: 0px;
+    width: 100%;
+  }
 }
 .wrapper > .float-container > .float-child {
   flex-direction: row;
