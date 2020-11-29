@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>API random user Example</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <input id ="searchstring" type="text" onchange="addToBuffer()">
+
+ <label>Digite uma letra para ativar sua busca:</label>   
+
+    <div id="results" class="float-container" >
+      <div id="foundlist" class="float-child">
+
+      <ul id="listofpersons">
+        </ul>
+
+        <h1>Results:</h1>
+
+     </div>
+
+       <div id="summary" class="float-child" >
+
+        <h2>Statistics</h2>
+        
+        <p class="statitem" >Males:<spam id="countmales"></spam>
+        <p class="statitem" >Females:<spam id="countfemales"></spam>
+        <p class="statitem" >Total of ages:<spam id="totalages"></spam>
+        <p class="statitem" >Average age:<spam id="averageage"></spam>
+      </div>
+    </div>
+    
+  </body>
+</html>
